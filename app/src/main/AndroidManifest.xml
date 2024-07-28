@@ -258,6 +258,11 @@
             android:exported="true"
             android:label="甲级战犯：8Mi_Yile"
             android:name="com.w4.bangbang93hub.ImageViewActivity"/>
+            
+        <activity
+            android:exported="true"
+            android:label="本产品由Apache License 2.0保护。"
+            android:name="License"/>
 
     </application>
 
