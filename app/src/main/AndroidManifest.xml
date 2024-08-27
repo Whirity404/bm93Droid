@@ -1,231 +1,157 @@
 <?xml version='1.0' encoding='utf-8'?>
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="minesms.app"
     package="com.w4.bangbang93hub">
 
-    <!-- MANAGE_WIFI_NETWORK_SELECTION -->
     <uses-permission android:name="android.permission.MANAGE_WIFI_NETWORK_SELECTION"/>
 
-    <!-- 更改网络连接性 -->
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
 
-    <!-- 查看网络连接 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
-    <!-- 读取通话状态和移动网络信息 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
-    <!-- 完全的网络访问权限 -->
     <uses-permission android:name="android.permission.INTERNET"/>
 
-    <!-- 访问确切位置信息（使用 GPS 和网络进行定位） -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
-    <!-- 访问大致位置信息（使用网络进行定位） -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
-    <!-- 允许接收 WLAN 多播 -->
     <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
 
-    <!-- 查看 WLAN 状态 -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
-    <!-- 更改 WLAN 状态 -->
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
 
-    <!-- 发现/连接附近的 WLAN 设备 -->
     <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES"/>
 
-    <!-- MANAGE_WIFI_INTERFACES -->
     <uses-permission android:name="android.permission.MANAGE_WIFI_INTERFACES"/>
 
-    <!-- OVERRIDE_WIFI_CONFIG -->
     <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG"/>
 
-    <!-- 与蓝牙设备配对 -->
     <uses-permission android:name="android.permission.BLUETOOTH"/>
 
-    <!-- 蓝牙管理 -->
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
 
-    <!-- 可被附近的蓝牙设备发现 -->
     <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
 
-    <!-- 连接已配对的蓝牙设备 -->
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
 
-    <!-- 发现蓝牙设备 -->
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
 
-    <!-- BLUETOOTH_PRIVILEGED -->
     <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
 
-    <!-- REBOOT -->
     <uses-permission android:name="android.permission.REBOOT"/>
 
-    <!-- 修改或删除 SD 卡中的内容 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
-    <!-- BATTERY_STATS -->
     <uses-permission android:name="android.permission.BATTERY_STATS"/>
 
-    <!-- BIND_NOTIFICATION_LISTENER_SERVICE -->
     <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"/>
 
-    <!-- BIND_VR_LISTENER_SERVICE -->
     <uses-permission android:name="android.permission.BIND_VR_LISTENER_SERVICE"/>
 
-    <!-- BROADCAST_PACKAGE_REMOVED -->
     <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REMOVED"/>
 
-    <!-- BROADCAST_SMS -->
     <uses-permission android:name="android.permission.BROADCAST_SMS"/>
 
-    <!-- BROADCAST_WAP_PUSH -->
     <uses-permission android:name="android.permission.BROADCAST_WAP_PUSH"/>
 
-    <!-- CHANGE_COMPONENT_ENABLED_STATE -->
     <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
 
-    <!-- 发送持久广播 -->
     <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
 
-    <!-- DIAGNOSTIC -->
     <uses-permission android:name="android.permission.DIAGNOSTIC"/>
 
-    <!-- 展开/收拢状态栏 -->
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
 
-    <!-- FACTORY_TEST -->
     <uses-permission android:name="android.permission.FACTORY_TEST"/>
 
-    <!-- INSTALL_LOCATION_PROVIDER -->
     <uses-permission android:name="android.permission.INSTALL_LOCATION_PROVIDER"/>
 
-    <!-- INSTALL_PACKAGES -->
     <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
 
-    <!-- INSTANT_APP_FOREGROUND_SERVICE -->
     <uses-permission android:name="android.permission.INSTANT_APP_FOREGROUND_SERVICE"/>
 
-    <!-- 安装快捷方式 -->
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
 
-    <!-- LOADER_USAGE_STATS -->
     <uses-permission android:name="android.permission.LOADER_USAGE_STATS"/>
 
-    <!-- MASTER_CLEAR -->
     <uses-permission android:name="android.permission.MASTER_CLEAR"/>
 
-    <!-- MODIFY_PHONE_STATE -->
     <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
 
-    <!-- MOUNT_FORMAT_FILESYSTEMS -->
     <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>
 
-    <!-- MANAGE_EXTERNAL_STORAGE -->
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
 
-    <!-- MOUNT_UNMOUNT_FILESYSTEMS -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
 
-    <!-- PACKAGE_USAGE_STATS -->
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
 
-    <!-- 让应用始终运行 -->
     <uses-permission android:name="android.permission.PERSISTENT_ACTIVITY"/>
 
-    <!-- 发送通知 -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
 
-    <!-- READ_ASSISTANT_APP_SEARCH_DATA -->
     <uses-permission android:name="android.permission.READ_ASSISTANT_APP_SEARCH_DATA"/>
 
-    <!-- 读取基本电话状态和身份信息 -->
     <uses-permission android:name="android.permission.READ_BASIC_PHONE_STATE"/>
 
-    <!-- 读取存储卡中的内容 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
-    <!-- READ_INPUT_STATE -->
     <uses-permission android:name="android.permission.READ_INPUT_STATE"/>
 
-    <!-- READ_NEARBY_STREAMING_POLICY -->
     <uses-permission android:name="android.permission.READ_NEARBY_STREAMING_POLICY"/>
 
-    <!-- READ_PRECISE_PHONE_STATE -->
     <uses-permission android:name="android.permission.READ_PRECISE_PHONE_STATE"/>
 
-    <!-- 读取同步统计信息 -->
     <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
 
-    <!-- REQUEST_COMPANION_PROFILE_APP_STREAMING -->
     <uses-permission android:name="android.permission.REQUEST_COMPANION_PROFILE_APP_STREAMING"/>
 
-    <!-- REQUEST_COMPANION_PROFILE_WATCH -->
     <uses-permission android:name="android.permission.REQUEST_COMPANION_PROFILE_WATCH"/>
 
-    <!-- 在后台运行 -->
     <uses-permission android:name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND"/>
 
-    <!-- REQUEST_COMPANION_PROFILE_COMPUTER -->
     <uses-permission android:name="android.permission.REQUEST_COMPANION_PROFILE_COMPUTER"/>
 
-    <!-- REQUEST_COMPANION_PROFILE_AUTOMOTIVE_PROJECTION -->
     <uses-permission android:name="android.permission.REQUEST_COMPANION_PROFILE_AUTOMOTIVE_PROJECTION"/>
 
-    <!-- REQUEST_COMPANION_SELF_MANAGED -->
     <uses-permission android:name="android.permission.REQUEST_COMPANION_SELF_MANAGED"/>
 
-    <!-- REQUEST_COMPANION_START_FOREGROUND_SERVICES_FROM_BACKGROUND -->
     <uses-permission android:name="android.permission.REQUEST_COMPANION_START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
 
-    <!-- 在后台使用数据 -->
     <uses-permission android:name="android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND"/>
 
-    <!-- 请求删除文件包 -->
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
 
-    <!-- 请求忽略电池优化 -->
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
 
-    <!-- 请求安装文件包 -->
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
 
-    <!-- REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE -->
     <uses-permission android:name="android.permission.REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE"/>
 
-    <!-- 请求屏幕锁定复杂度 -->
     <uses-permission android:name="android.permission.REQUEST_PASSWORD_COMPLEXITY"/>
 
-    <!-- 关闭其他应用 -->
     <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
 
-    <!-- SIGNAL_PERSISTENT_PROCESSES -->
     <uses-permission android:name="android.permission.SIGNAL_PERSISTENT_PROCESSES"/>
 
-    <!-- START_FOREGROUND_SERVICES_FROM_BACKGROUND -->
     <uses-permission android:name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
 
-    <!-- 开始查看应用功能 -->
     <uses-permission android:name="android.permission.START_VIEW_APP_FEATURES"/>
 
-    <!-- 授权使用“查看权限” -->
     <uses-permission android:name="android.permission.START_VIEW_PERMISSION_USAGE"/>
 
-    <!-- STATUS_BAR -->
     <uses-permission android:name="android.permission.STATUS_BAR"/>
 
-    <!-- SUBSCRIBE_TO_KEYGUARD_LOCKED_STATE -->
     <uses-permission android:name="android.permission.SUBSCRIBE_TO_KEYGUARD_LOCKED_STATE"/>
 
-    <!-- 在其他应用之上显示内容 -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
-    <!-- 卸载快捷方式 -->
     <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
 
-    <!-- UPDATE_DEVICE_STATS -->
     <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS"/>
 
     <application
@@ -238,6 +164,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
+            android:icon="@drawable/bangbang"
             android:label="@string/app_name">
 
             <intent-filter>
@@ -254,15 +181,32 @@
             android:name="android.max_aspect"
             android:value="4.0"/>
 
-        <activity 
+        <activity
             android:exported="true"
-            android:label="甲级战犯：8Mi_Yile"
+            android:label="看图"
+            android:icon="@drawable/bangbang"
             android:name="com.w4.bangbang93hub.ImageViewActivity"/>
-            
+
         <activity
             android:exported="true"
             android:label="本产品由Apache License 2.0保护。"
             android:name="License"/>
+
+        
+        <activity 
+            android:name=".AboutActivity"
+            android:icon="@drawable/bangbang"
+            android:label="关于">
+        <intent-filter>
+            <action android:name="com.w4.bangbang93hub.SHOW_ABOUT" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="CustomAlertDialogActivity"
+            android:exported="true" />
 
     </application>
 
