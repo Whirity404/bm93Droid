@@ -14,6 +14,9 @@ public class LogUtil {
     private static final String LOG_DIR = "bangbang93HUB";
     private static final String LOG_FILE = "latest.log";
 
+    public static void log(String tAG, String p1) {
+    }
+
     public static void log(String message) {
         Log.d(TAG, message);
         writeLogToFile(message);
