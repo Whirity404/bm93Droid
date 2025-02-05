@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="AppTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
-	</style>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- Fullscreen theme -->
+    <style name="AppTheme.FullScreen" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>  
+    </style>
 </resources>

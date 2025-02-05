@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">bangbang93HUB</string>
+    <string name="image_api">https://api.hesiy.cn/api/bangbang-view</string>
+    <string name="build_time">2024-09-01 15:40</string>
+    <string name="ICP">noICP</string>
+    <string name="home_oi">Open Image</string>
+    <string name="home_exit">exit app</string>
+    <string name="home_about">about</string>
+    <string name="home_crash">Crash Helper</string>
+    <string name="ei_head">Warning</string>
+    <string name="ei_msg">Do you want to exit the image?</string>
+    <string name="ei_ok">exit</string>
+    <string name="ei_cancel">Cancel</string>
+    <string name="exit">Press exit to exit program</string>
+    <string name="exit_h">note</string>
+    <string name="exit_m">Do you want to quit</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="home_what">awa</string>
 </resources>
