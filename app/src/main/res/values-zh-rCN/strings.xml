@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">bangbang93HUB</string>
+    <string name="build_time">2024-09-01 15:40</string>
+    <string name="ICP">备你妈案</string>
+    <string name="bBb">构建时间</string>
+    <string name="oOo">感谢bangbang93</string>
+    <string name="bangbang">BangBang93</string>
+    <string name="cr">Whirity404</string>
+    <string name="it">备案号</string>
+    <string name="home_oi">打开图片</string>
+    <string name="home_exit">退出应用</string>
+    <string name="home_about">关于</string>
+    <string name="home_crash">崩溃帮助</string>
+    <string name="ei_head">注意</string>
+    <string name="ei_msg">您想要继续看图吗</string>
+    <string name="ei_ok">退出</string>
+    <string name="ei_cancel">继续</string>
+    <string name="exit">在按确定退出程序</string>
+    <string name="exit_h">注意</string>
+    <string name="exit_m">您 要 退 出 吗</string>
+    <string name="yes">是</string>
+    <string name="no">不</string>
+</resources>
