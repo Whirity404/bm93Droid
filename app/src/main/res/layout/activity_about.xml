@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/nz_np"
+	android:orientation="vertical"
+	android:padding="16dp">
+
+	<ImageView
+		android:id="@+id/app_icon"
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:src="@drawable/bangbang"
+		android:layout_gravity="center"
+		android:onClick=""/>
+
+	<TextView
+		android:id="@+id/copyright"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/cr"
+		android:layout_marginTop="16dp"
+		android:layout_gravity="center"
+		style="@style/AppTheme"
+		android:textColor="#FFFFFFFF"/>
+
+	<TextView
+		android:id="@+id/acknowledgements"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/oOo"
+		android:layout_marginTop="16dp"
+		android:layout_gravity="center"
+		android:textColor="#FFFFFFFF"/>
+
+	<ImageView
+		android:id="@+id/bangbang_img"
+		android:layout_width="60dp"
+		android:layout_height="60dp"
+		android:src="@drawable/bangbang"
+		android:layout_marginTop="16dp"
+        android:onClick=""
+		android:layout_gravity="center"/>
+
+	<TextView
+		android:id="@+id/bangbang"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/bangbang"
+		android:layout_marginTop="16dp"
+		android:layout_gravity="center"
+		android:textColor="#FFFFFFFF"/>
+
+	<TextView
+		android:id="@+id/build_date_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/bBb"
+		android:layout_marginTop="16dp"
+		android:layout_gravity="center"
+		android:textColor="#FFFFFFFF"/>
+
+	<TextView
+		android:id="@+id/build_date"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/build_time"
+		android:layout_marginTop="16dp"
+		android:layout_gravity="center"
+		android:textColor="#FFFFFFFF"/>
+
+	<TextView
+		android:id="@+id/icp_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/it"
+		android:layout_marginTop="16dp"
+		android:layout_gravity="center"
+		android:textColor="#FFFFFFFF"/>
+
+	<TextView
+		android:id="@+id/icp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/ICP"
+		android:layout_marginTop="16dp"
+		android:layout_gravity="center"
+		android:textColor="#FFFFFFFF"/>
+
+</LinearLayout>
+

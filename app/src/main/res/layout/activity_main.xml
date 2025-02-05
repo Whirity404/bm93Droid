@@ -1,13 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+	<Button
+		android:id="@+id/button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/home_oi"
+		android:layout_centerInParent="true"/>
+
+	<Button
+		android:id="@+id/button_open_about"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/home_about"
+		android:layout_below="@id/button"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="16dp"/>
+
+	<Button
+		android:id="@+id/button_open_tips_crash"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/home_crash"
+		android:layout_below="@id/button_open_about"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="16dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/home_exit"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_toRightOf="@id/button_open_tips_crash"
+		android:layout_below="@id/button_open_tips_crash"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/restart"
+		android:onClick="@+id/restart_home"
+		android:layout_marginTop="16dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open Image"
-        android:layout_centerInParent="true"/>
+        android:text="@string/home_what"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_toRightOf="@id/restart"
+        android:layout_below="@id/restart"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/awatext"
+        
+        android:onClick="onHomeText"
+		android:layout_marginTop="16dp"/>
+
 </RelativeLayout>
 

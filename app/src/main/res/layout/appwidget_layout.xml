@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<ImageView
+		android:id="@+id/widget_icon"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:src="@drawable/bangbang"
+		android:contentDescription="@string/app_name"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="BangBang93"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:translationX="100dp"
+		android:translationY="100dp"
+        android:contentDescription="bangbang"
+		android:textColor="#FF00FFF9"/>
+
+</FrameLayout>
+
