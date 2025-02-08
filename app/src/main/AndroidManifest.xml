@@ -211,18 +211,26 @@
             android:name="CustomAlertDialogActivity"
             android:exported="true"/>
 
-        <activity 
+        <activity
             android:label="CrashPadHelper"
             android:name="com.w4.bangbang93hub.CrashFaq"/>
 
         <receiver android:name="AppWidgetProvider">
+
             <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+
             </intent-filter>
-            <meta-data android:name="android.appwidget.provider"
-                android:resource="@xml/appwidget_info" />
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_info"/>
+
         </receiver>
-        
+
+        <service android:name="com.w4.bangbang93hub.CleanDataService"/>
+
     </application>
 
 </manifest>
