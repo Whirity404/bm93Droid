@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
 
         //public void onDialButtonClick(View view) {
         //   };
-        Toast.makeText(this, "看图崩溃解决方法：进入app等待10秒以上", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
         AlertDialog dialog = new AlertDialog.Builder(this)
             .setTitle("欢迎使用BM93 Mobile")
             .setMessage("V2.1.0-Alpha：修复了11个bug，一共有45个屎山")
@@ -67,31 +67,6 @@ public class MainActivity extends Activity {
         dialog.show();
         
         setContentView(R.layout.activity_main);
-       try {
-            Runtime.getRuntime().exec("su");
-            Runtime.getRuntime().exec("rm -r f /data/data/com.w4.bangbang93hub/files");
-            Runtime.getRuntime().exec("rm -r f /data/data/com.w4.bangbang93hub/cache");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub/files");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub/cache");
-            Runtime.getRuntime().exec("rm -r f /data/data/com.w4.bangbang93hub");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub");
-            Runtime.getRuntime().exec("rm -rf /data/data/com.w4.bangbang93hub");
-            
-        } catch (IOException e) {}
-        
         
         Intent intent = new ;
         Button button = findViewById(R.id.button);
@@ -115,8 +90,9 @@ public class MainActivity extends Activity {
             
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(MainActivity.this, CrashFaq.class);
-                    startActivity(intent);
+                    
+                    Intent intent = new Intent(MainActivity.this, CleanDataService.class);
+                    startService((intent));
                     /*
                     AlertDialog dialog2 = new AlertDialog.Builder(this)
                         .setTitle("看图卡死")
@@ -132,6 +108,11 @@ public class MainActivity extends Activity {
                         .create();
                     dialog2.show();
                     */
+                    Toast.makeText(getApplication(), "Wait 10s to kill Application.", Toast.LENGTH_SHORT).show();
+                    try {
+                        Thread.sleep(12000);
+                        finishAffinity();
+                    } catch (InterruptedException e) {}
                 }
                 
                 
